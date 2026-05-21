@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Ivan & Sandra | Nuestra Boda - 12 Julio 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuentes elegantes: serif para el cuerpo, sans para detalles -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fbf7f0;  /* cálido, neutro */
+            font-family: 'Cormorant Garamond', serif;
+            color: #2e2a28;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 2rem auto;
+            background: #ffffff;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05), 0 5px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 28px;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        /* decoración superior sutil */
+        .hero {
+            background: linear-gradient(135deg, #f9f2e3 0%, #f5e9db 100%);
+            padding: 2.2rem 2rem 1.8rem;
+            text-align: center;
+            border-bottom: 1px solid #eedbcb;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            font-weight: 500;
+            color: #7f5a4b;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero .verse {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #aa7b65;
+            border-top: 1px solid #e2cfbf;
+            display: inline-block;
+            padding-top: 0.7rem;
+            margin-top: 0.5rem;
+        }
+
+        /* contenido principal */
+        .content {
+            padding: 2rem 2rem 1.8rem;
+        }
+
+        .invitation-text {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .greeting {
+            font-size: 1.35rem;
+            font-weight: 400;
+            color: #4a3b34;
+            margin-bottom: 1.5rem;
+        }
+
+        .names {
+            font-size: 2.5rem;
+            font-weight: 500;
+            line-height: 1.2;
+            margin: 0.5rem 0 0.25rem;
+            color: #8b5a48;
+            letter-spacing: -0.3px;
+        }
+
+        .parents {
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            color: #7f6b5e;
+            background: #fdf8f3;
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            border-radius: 60px;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .blessing-line {
+            margin: 1rem 0 1.2rem;
+            font-size: 1.1rem;
+            color: #6f5546;
+        }
+
+        .bible-verse {
+            background: #fef7f0;
+            padding: 1.5rem;
+            border-left: 4px solid #dbb892;
+            margin: 1.8rem 0;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #5a3e30;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .bible-verse small {
+            display: block;
+            margin-top: 0.5rem;
+            font-style: normal;
+            font-weight: 500;
+            color: #9b7662;
+        }
+
+        .details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            background: #fffaf5;
+            padding: 1.6rem;
+            border-radius: 32px;
+            margin: 1.5rem 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .detail-item {
+            text-align: center;
+            flex: 1;
+            min-width: 140px;
+        }
+
+        .detail-icon {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.7rem;
+            color: #aa7b65;
+        }
+
+        .detail-value {
+            font-size: 1.2rem;
+            font-weight: 500;
+            font-family: 'Cormorant Garamond', serif;
+            color: #3b2c25;
+        }
+
+        .confirmation {
+            text-align: center;
+            margin: 2rem 0 1rem;
+        }
+
+        .phone {
+            font-size: 1.3rem;
+            background: #f0e7df;
+            display: inline-block;
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+            color: #704c3b;
+            margin-top: 0.2rem;
+        }
+
+        /* formulario google forms */
+        .form-wrapper {
+            margin: 2rem 0 1rem;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            background: #fff;
+            border: 1px solid #f0e2d6;
+        }
+
+        .form-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.15rem;
+            text-align: center;
+            background: #faf1e8;
+            padding: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            color: #7a5a4a;
+        }
+
+        iframe {
+            width: 100%;
+            height: 750px;
+            border: none;
+            display: block;
+        }
+
+        .footer {
+            background: #fcf7f2;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            border-top: 1px solid #eedbcb;
+            font-size: 0.95rem;
+            color: #9c7b68;
+        }
+
+        .footer p {
+            margin: 0.2rem 0;
+        }
+
+        .heart-icon {
+            color: #c49a7a;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                margin: 0.8rem;
+                border-radius: 24px;
+            }
+            .content {
+                padding: 1.5rem;
+            }
+            .names {
+                font-size: 1.8rem;
+            }
+            .details {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            iframe {
+                height: 650px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            iframe {
+                height: 600px;
+            }
+            .bible-verse {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <h1>NUESTRO MATRIMONIO</h1>
+        <div class="verse">“Y sobre todas estas cosas vestíos de amor, que es el vínculo perfecto.”<br>Colosenses 3:14</div>
+    </div>
+
+    <div class="content">
+        <div class="invitation-text">
+            <div class="greeting">
+                Por el amor que ha guiado nuestros caminos, tenemos la alegría de invitarte a celebrar la unión de nuestras vidas.
+            </div>
+            <div class="names">
+                Ivan Melquiades Navarro Rojas <span style="font-weight:300">&</span> Sandra Lopez Mamani
+            </div>
+            <div class="parents">
+                Con la bendición de Dios y de nuestros padres:<br>
+                Melquiades Navarro Cardona & Lourdes Luz Rojas García<br>
+                Juan Lopez Riguera & Lucía Mamani Cruz
+            </div>
+            <div class="blessing-line">
+                ✦ Hemos decidido caminar juntos para siempre y queremos compartir contigo este momento lleno de fe, amor y felicidad. ✦
+            </div>
+        </div>
+
+        <div class="bible-verse">
+            “Por eso el hombre dejará a su padre y a su madre, y se unirá a su esposa, y los dos serán un solo ser.”
+            <small>Génesis 2:24</small>
+        </div>
+
+        <!-- Detalles del evento -->
+        <div class="details">
+            <div class="detail-item">
+                <div class="detail-icon">📅</div>
+                <div class="detail-label">Fecha</div>
+                <div class="detail-value">12 de Julio 2026</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-icon">🕊️</div>
+                <div class="detail-label">Hora</div>
+                <div class="detail-value">16:00 hrs</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-icon">📍</div>
+                <div class="detail-label">Ceremonia y recepción</div>
+                <div class="detail-value">Iglesia Biblia y Oración</div>
+            </div>
+        </div>
+
+        <div class="invitation-text" style="margin-top:0.5rem">
+            <p style="font-size:1.1rem">Tu presencia será una bendición para nosotros y hará aún más especial este día que guardaremos por siempre en el corazón.</p>
+            <div class="bible-verse" style="background:transparent; border-left: none; margin:0.8rem 0; font-size:1rem">
+                “Todo lo hizo hermoso en su tiempo.” <small>Eclesiastés 3:11</small>
+            </div>
+            <div style="font-size: 1.3rem; font-weight:500; margin:0.5rem 0">Con amor; <strong>Iván & Sandra</strong></div>
+            <div class="confirmation">
+                <div style="font-family: 'Montserrat', sans-serif; font-weight:500; letter-spacing:0.5px">📞 Confirmación de asistencia</div>
+                <div class="phone">67765650</div>
+                <p style="font-size: 0.85rem; margin-top: 0.5rem;">Por favor confirma antes del 30 de junio de 2026</p>
+            </div>
+        </div>
+
+        <!-- Formulario Google Forms -->
+        <div class="form-wrapper">
+            <div class="form-title">✧ Confirma tu asistencia y comparte tu mensaje ✧</div>
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeye6wpRaU-qDl-KZNn8GeGPX5MPRm6s3YxfXTjuMf-et4OiQ/viewform?usp=header" 
+                title="Formulario confirmación boda Iván y Sandra"
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Con gratitud y alegría, esperamos contar con tu presencia.</p>
+        <p>Dios bendiga tu vida <span class="heart-icon">❤️</span></p>
+        <p style="font-size:0.7rem; margin-top:0.7rem">Iglesia Biblia y Oración · 12 Julio 2026 · 16:00</p>
+    </div>
+</div>
+</body>
+</html>

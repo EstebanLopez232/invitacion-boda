@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Matrimonio - Iván & Sandra</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fdfaf6;
+            color: #444;
+            line-height: 1.7;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.45)),
+                url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            animation: fadeIn 2s ease;
+        }
+
+        .subtitle {
+            letter-spacing: 4px;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 95px;
+            margin-bottom: 10px;
+        }
+
+        .verse {
+            font-style: italic;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 80px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 25px;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 42px;
+            font-family: 'Great Vibes', cursive;
+            color: #b28b67;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .names {
+            font-size: 40px;
+            font-family: 'Great Vibes', cursive;
+            color: #b28b67;
+            margin: 25px 0;
+        }
+
+        .parents {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .parents p {
+            margin-bottom: 8px;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .detail-box {
+            background: #f9f4ef;
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .detail-box h3 {
+            margin-bottom: 10px;
+            color: #b28b67;
+        }
+
+        .footer-text {
+            margin-top: 40px;
+            font-style: italic;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .contact a {
+            color: #25D366;
+            text-decoration: none;
+        }
+
+        .form-section {
+            background: #fff;
+        }
+
+        iframe {
+            width: 100%;
+            height: 900px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .final-message {
+            text-align: center;
+            padding: 60px 20px;
+            background: #f9f4ef;
+        }
+
+        .final-message h3 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 50px;
+            color: #b28b67;
+            margin-bottom: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width:768px) {
+
+            .title {
+                font-size: 60px;
+            }
+
+            .card {
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 34px;
+            }
+
+            .names {
+                font-size: 32px;
+            }
+
+            iframe {
+                height: 1000px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PORTADA -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="subtitle">NUESTRO MATRIMONIO</div>
+
+            <h1 class="title">Iván & Sandra</h1>
+
+            <p class="verse">
+                “Y sobre todas estas cosas vestíos de amor,
+                que es el vínculo perfecto.”
+                <br>
+                Colosenses 3:14
+            </p>
+        </div>
+    </section>
+
+    <!-- INVITACIÓN -->
+    <section>
+        <div class="container">
+            <div class="card">
+
+                <h2>Con Amor</h2>
+
+                <p>
+                    Por el amor que ha guiado nuestros caminos,
+                    tenemos la alegría de invitarte a celebrar
+                    la unión de nuestras vidas.
+                </p>
+
+                <div class="names">
+                    Ivan Melquiades Navarro Rojas
+                    <br>
+                    &
+                    <br>
+                    Sandra Lopez Mamani
+                </div>
+
+                <p>
+                    Con la bendición de Dios y de nuestros padres:
+                </p>
+
+                <div class="parents">
+                    <p>Melquiades Navarro Cardona</p>
+                    <p>Lourdes Luz Rojas García</p>
+                    <p>Juan Lopez Riguera</p>
+                    <p>Lucia Mamani Cruz</p>
+                </div>
+
+                <p>
+                    Hemos decidido caminar juntos para siempre
+                    y queremos compartir contigo este momento
+                    lleno de fe, amor y felicidad.
+                </p>
+
+                <p class="verse">
+                    “Por eso el hombre dejará a su padre y a su madre,
+                    y se unirá a su esposa,
+                    y los dos serán un solo ser.”
+                    <br>
+                    Génesis 2:24
+                </p>
+
+                <div class="details">
+
+                    <div class="detail-box">
+                        <h3>📅 Fecha</h3>
+                        <p>12 de Julio 2026</p>
+                    </div>
+
+                    <div class="detail-box">
+                        <h3>🕊️ Hora</h3>
+                        <p>16:00</p>
+                    </div>
+
+                    <div class="detail-box">
+                        <h3>📍 Lugar</h3>
+                        <p>Iglesia Biblia y Oración</p>
+                    </div>
+
+                </div>
+
+                <p class="footer-text">
+                    Tu presencia será una bendición para nosotros
+                    y hará aún más especial este día
+                    que guardaremos por siempre en el corazón.
+                </p>
+
+                <p class="verse">
+                    “Todo lo hizo hermoso en su tiempo.”
+                    <br>
+                    Eclesiastés 3:11
+                </p>
+
+                <div class="contact">
+                    Con amor; Iván & Sandra
+                    <br><br>
+
+                    📞 Confirmación de asistencia:
+                    <a href="https://wa.me/59167765650" target="_blank">
+                        67765650
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="form-section">
+        <div class="container">
+
+            <h2>Confirma tu Asistencia</h2>
+
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeye6wpRaU-qDl-KZNn8GeGPX5MPRm6s3YxfXTjuMf-et4OiQ/viewform?usp=header">
+            </iframe>
+
+        </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final-message">
+        <h3>¡Te Esperamos!</h3>
+
+        <p>
+            Será un honor compartir este momento tan especial contigo.
+        </p>
+    </section>
+
+</body>
+
+</html>
